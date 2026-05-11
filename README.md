@@ -5,6 +5,7 @@ A modern, full-stack portfolio website with an integrated learning platform buil
 ## ✨ Features
 
 ### Portfolio Features
+
 - **Home Page**: Hero section with stats and featured courses
 - **About Page**: Professional experience, education, and bio
 - **Skills Page**: Interactive skill visualization with progress bars
@@ -14,6 +15,7 @@ A modern, full-stack portfolio website with an integrated learning platform buil
 - **Contact Page**: Contact form and social media links
 
 ### LMS Features
+
 - **Course Catalog**: Browse available courses with difficulty levels
 - **Course Detail Pages**: Lesson lists with progress tracking
 - **Lesson Viewer**: Markdown-based content with navigation
@@ -22,6 +24,7 @@ A modern, full-stack portfolio website with an integrated learning platform buil
 - **Achievements**: Unlock badges as you learn
 
 ### Authentication
+
 - **Sign Up / Login**: JWT-based authentication
 - **Protected Routes**: Dashboard requires authentication
 - **Session Management**: 30-day session persistence
@@ -55,48 +58,54 @@ A modern, full-stack portfolio website with an integrated learning platform buil
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - npm or yarn
 
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    cd portfolio-lms
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Set up environment variables**
    Create a `.env` file:
+
    ```env
    # Database (SQLite for development)
    DATABASE_URL="file:./dev.db"
-   
+
    # JWT Secret (generate a secure random string)
    JWT_SECRET="your-super-secret-jwt-key"
-   
+
    # GitHub API (optional)
    GITHUB_USERNAME="your-github-username"
    GITHUB_TOKEN="your-github-token"
    ```
 
 4. **Set up database**
+
    ```bash
    # Generate Prisma client
    npx prisma generate
-   
+
    # Push schema to database
    npx prisma db push
-   
+
    # Seed database with courses
    npm run db:seed
    ```
 
 5. **Run development server**
+
    ```bash
    npm run dev
    ```
@@ -107,22 +116,26 @@ A modern, full-stack portfolio website with an integrated learning platform buil
 ## 📖 Usage
 
 ### Demo Account
+
 - **Email**: admin@example.com
 - **Password**: admin123
 
 ### Creating a New Account
+
 1. Click "Login" in the navbar
 2. Click "Sign up" link
 3. Fill in your details
 4. Start learning!
 
 ### Enrolling in Courses
+
 1. Browse courses at `/courses`
 2. Click on a course to view details
 3. Click on any lesson to start learning
 4. Mark lessons as complete to track progress
 
 ### Dashboard Features
+
 - View enrolled courses
 - Track overall progress
 - See recent activity
@@ -183,6 +196,7 @@ portfolio-lms/
    - Update `src/app/gallery/page.tsx` with image paths
 
 ### Styling
+
 - Modify `tailwind.config.ts` for theme colors
 - Edit `src/app/globals.css` for global styles
 - Update component styles with Tailwind classes
@@ -190,6 +204,7 @@ portfolio-lms/
 ## 🚀 Deployment
 
 ### Production Database
+
 For production, use PostgreSQL:
 
 ```env
@@ -197,12 +212,14 @@ DATABASE_URL="postgresql://user:password@host:5432/portfolio_lms"
 ```
 
 ### Deploy to Vercel
+
 1. Push code to GitHub
 2. Import project in Vercel
 3. Set environment variables
 4. Deploy
 
 ### Deploy to Other Platforms
+
 ```bash
 npm run build
 npm run start
@@ -275,6 +292,7 @@ This project is open source and available under the MIT License.
 ## 👨‍💻 Author
 
 **Farhad Ali**
+
 - Portfolio: [farhad.dev](https://farhad.dev)
 - GitHub: [@farhad-ali](https://github.com/farhad-ali)
 - LinkedIn: [Farhad Ali](https://linkedin.com/in/farhad-ali)
@@ -290,4 +308,5 @@ This project is open source and available under the MIT License.
 ---
 
 Built with ❤️ using Next.js & Tailwind CSS
-"# PERSONALxPORTFOLIO-" 
+"# PERSONALxPORTFOLIO-"
+

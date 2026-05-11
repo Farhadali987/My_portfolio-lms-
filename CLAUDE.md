@@ -4,26 +4,28 @@
 
 
 
+
+
 <!-- cloude-code-toolbox:mcp-skills-awareness-begin -->
 
 ### MCP & Skills awareness (Cloude Code ToolBox)
 
-_Last synced: 2026-04-06T23:18:05.136Z._
+_Last synced: 2026-05-10T12:41:41.419Z._
 
 - **Full report:** `.claude/cloude-code-toolbox-mcp-skills-awareness.md` in this workspace (auto-overwritten on each scan). Use it as ground truth for configured servers and skill folders.
-- **MCP:** For **live tools** in Claude Code, enable the matching server via `/mcp` (and VS Code `mcp.json` where applicable).
+- **MCP:** For **live tools** in Claude Code, enable the matching server via `/mcp`. Servers are configured in `~/.claude.json` (user) and `.mcp.json` (project).
 - **When the user’s task matches a server** (e.g. Confluence work and a **Confluence** / **Atlassian** MCP is listed), **prefer that server id** and plan on tool use—not only file search.
 - **Skills:** Folders below contain `SKILL.md`; attach or cite paths in chat when relevant.
 
 #### Workspace MCP
 
-- `d:\My_new_websit\portfolio-lms\.vscode\mcp.json` _(workspace: portfolio-lms)_ — _file missing_
+- `d:\My_new_websit\portfolio-lms\.mcp.json` _(workspace: portfolio-lms)_ — _file missing_
 
 _No active workspace servers in mcp.json._
 
 #### User MCP
 
-- `C:\Users\Engineer Farhad Ali\AppData\Roaming\Code\User\mcp.json` — _file missing_
+- `C:\Users\Engineer Farhad Ali\.claude.json` — _file missing_
 
 _No active user-scoped servers in mcp.json._
 
@@ -47,6 +49,10 @@ _None found (or no workspace open)._
 
 - **whatsapp-handler copy** — `C:\Users\Engineer Farhad Ali\.claude\skills\whatsapp-handler copy` — Process incoming WhatsApp messages from /Needs_Action/WHATSAPP_*.md. Classify intent, suggest replies, flag sales/invoice/support, create follow-up tasks.
 
+- **deploy-to-vercel** — `C:\Users\Engineer Farhad Ali\.agents\skills\deploy-to-vercel` — Deploy applications and websites to Vercel. Use when the user requests deployment actions like "deploy my app", "deploy and give me the link", "push this live", or "create a preview deployment".
+
 - **find-skills** — `C:\Users\Engineer Farhad Ali\.agents\skills\find-skills` — Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used w
+
+- **skill-creator** — `C:\Users\Engineer Farhad Ali\.agents\skills\skill-creator` — Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill pe
 
 <!-- cloude-code-toolbox:mcp-skills-awareness-end -->
