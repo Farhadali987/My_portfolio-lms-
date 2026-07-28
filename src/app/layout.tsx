@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: { 
   children: React.ReactNode
 }) {
   return (
@@ -39,7 +39,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
         <ThemeProvider>
           <div className="min-h-screen bg-gradient-to-br from-secondary-50 to-secondary-100 dark:from-secondary-950 dark:to-secondary-900">
-            <Navbar />
+            <Navbar /> 
             <main className="container mx-auto px-4 py-8">
               {children}
             </main>
